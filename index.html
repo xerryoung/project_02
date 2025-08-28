@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <title>TO ME</title>
+</head>
+<body>
+    <header>
+        <div class="h_wrap_1">
+            <div id="h_top">
+                <div id="h_logo">
+                    <a class="icon_ho" href="./index.html">
+                        <img class="icon_white" src="./images/main_logo_black.png" alt="main_logo_black">
+                        <img class="icon_green" src="./images/main_logo_green.png" alt="main_logo_green">
+                    </a>
+                </div>
+                <ul id="h_menu_1">
+                    <li><a href="#">소형</a></li>
+                    <li><a href="#">중형</a></li>
+                    <li><a href="#">대형</a></li>
+                    <li><a href="#">행잉</a></li>
+                    <li><a href="#">소품</a></li>
+                    <li><a href="#">용품</a></li>
+                </ul>
+                <div id="h_menu_btn">
+                    <img src="./images/icon_ham_black.png" alt="icon_ham_black">
+                </div>
+                <div id="h_search">
+                    <input type="text" placeholder="find your plant"><a href="#"><img src="./images/icon_magni_black.png" alt="icon_magni_black"></a>
+                </div>
+            </div>
+        </div>
+        <div class="h_wrap_2">
+            <ul id="h_menu_2">
+                <li><a href="#">관리자</a></li>
+                <li><a href="./sb_login.html">로그인</a></li>
+                <li><a href="./sb_signup.html">회원가입</a></li>
+                <li><a class="icon_ho" href="#"><img class="icon_white" src="./images/icon_heart_white.png" alt="icon_heart_white"><img class="icon_green" src="./images/icon_heart_green.png" alt="icon_heart_green"></a></li>
+                <li><a class="icon_ho" href="#"><img class="icon_white" src="./images/icon_cart_white.png" alt="icon_cart_white"><img class="icon_green" src="./images/icon_cart_green.png" alt="icon_cart_green"></a></li>
+                <li><a class="icon_ho" href="#"><img class="icon_white" src="./images/icon_person_white.png" alt="icon_person_white"><img class="icon_green" src="./images/icon_person_green.png" alt="icon_person_green"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="m_sec_1">
+            <article class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="./images/main_banner_01.jpg" alt="main_banner_01">
+                    <img class="swiper-slide" src="./images/main_banner_02.jpg" alt="main_banner_02">
+                    <img class="swiper-slide" src="./images/main_banner_03.jpg" alt="main_banner_03">
+                </div>
+            </article>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                });
+            </script>
+            <article id="m1_text">
+                <div>
+                    <img src="./images/main_banner_text.png" alt="main_banner_text">
+                </div>
+            </article>
+        </section>
+        <section class="m_sec_2">
+            <div>
+                <div id="m2_search">
+                    <input type="text" placeholder="🌼 나만의 반려식물을 찾아보세요 🌼">
+                    <img src="./images/icon_magni_black.png" alt="icon_magni_black">
+                </div>
+                <div>
+                    <a class="btn_ho" href="#">추천상품</a>
+                    <a class="btn_ho" href="#">인기상품</a>
+                    <a class="btn_ho" href="#">신규상품</a>
+                </div>
+                <h4>이런 식물은 어떠신가요?</h4>
+                <div id="m2_rcmd">
+                    <figure>
+                        <img src="./images/p_s_연필선인장.jpg" alt="연필선인장">
+                        <figcaption>연필선인장</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./images/p_s_십이지권.jpg" alt="십이지권">
+                        <figcaption>십이지권</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./images/p_m_산세베리아.jpg" alt="산세베리아">
+                        <figcaption>산세베리아</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./images/p_m_무늬몬스테라.jpg" alt="무늬몬스테라">
+                        <figcaption>무늬몬스테라</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="m_sec_3">
+            <div class="m3_wrap">
+                <div id="m3_list">
+                    <ul>
+                        <li><a href="#">소형</a><span>책상에 올려놓기 좋은 소형 화분</span></li>
+                        <li><a href="#">중형</a><span>장식장 위 포인트로 두는 중형 화분</span></li>
+                        <li><a href="#">대형</a><span>강렬한 포인트가 되어줄 대형 화분</span></li>
+                        <li><a href="#">행잉</a><span>한 폭의 그림 같은 행잉플랜트</span></li>
+                        <li><a href="#">소품</a><span>플랜테리어를 완성하는 작은 소품</span></li>
+                        <li><a href="#">용품</a><span>사소한 부분까지 채워넣는 감성</span></li>
+                    </ul>
+                </div>
+                <div id="m3_product">
+                    <div id="m3_product_top">
+                        <div class="m3_gallery">
+                            <img class="m3_img" src="./images/p_s_꽃기린_red.jpg" alt="꽃기린빨강">
+                            <p class="m3_txt1">꽃기린(빨강)</p>
+                            <p class="m3_txt2">2,700원</p>
+                        </div>
+                        <div class="m3_gallery">
+                            <img class="m3_img" src="./images/p_s_꽃베고니아_white.jpg" alt="꽃베고니아하양">
+                            <p class="m3_txt1">꽃베고니아(하양)</p>
+                            <p class="m3_txt2">3,700원</p>
+                        </div>
+                        <div class="m3_gallery">
+                            <img class="m3_img" src="./images/p_s_게발선인장.jpg" alt="게발선인장">
+                            <p class="m3_txt1">게발선인장</p>
+                            <p class="m3_txt2">3,700원</p>
+                        </div>
+                    </div>
+                    <div id="m3_product_bottom">
+                        <div class="m3_gallery">
+                            <img class="m3_img" src="./images/p_s_포인세티아.jpg" alt="포인세티아">
+                            <p class="m3_txt1">포인세티아</p>
+                            <p class="m3_txt2">4,700원</p>
+                        </div>
+                        <div class="m3_gallery">
+                            <img class="m3_img" src="./images/p_s_방울복랑.jpg" alt="방울복랑">
+                            <p class="m3_txt1">방울복랑</p>
+                            <p class="m3_txt2">2,700원</p>
+                        </div>
+                        <div class="m3_gallery">
+                            <img class="m3_img" src="./images/p_s_꽃베고니아_yellow.jpg" alt="꽃베고니아노랑">
+                            <p class="m3_txt1">꽃베고니아(노랑)</p>
+                            <p class="m3_txt2">3,700원</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="m_sec_4">
+            <div class="m4_wrap">
+                <div class="m4_top">
+                    <div id="m4_top_div1">
+                        <div>
+                            <h2>공지사항</h2>
+                            <h3><a href="#">+</a></h3>
+                        </div>
+                        <div>
+                            <ul><li>소식</li><li><a href="#">TO ME ×【bLUBErry】귀여운 화분을 만나보세요!</a></li><li>08-26</li></ul>
+                            <ul><li>공지</li><li><a href="#">광복절 배송 안내</a></li><li>08-05</li></ul>
+                            <ul><li>공지</li><li><a href="#">광복절 배송안내</a></li><li>08-05</li></ul>
+                            <ul><li>공지</li><li><a href="#">광복절 배송안내</a></li><li>08-05</li></ul>
+                            <ul><li>공지</li><li><a href="#">유사 사이트 주의 안내</a></li><li>07-01</li></ul>
+                            <ul><li>공지</li><li><a href="#">유사 사이트 주의 안내</a></li><li>07-01</li></ul>
+                        </div>
+                    </div>
+                    <div id="m4_top_div2">
+                        <div>
+                            <div>
+                                <h2>고객센터</h2>
+                                <p>☎ 070-1224-3665</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m4_bottom">
+                    <div class="m4_bottom_bnn">
+                        <a href="#"><img src="./images/mini_banner_1.jpg" alt="mini1"></a>
+                    </div>
+                    <div class="m4_bottom_bnn">
+                        <a href="#"><img src="./images/mini_banner_2.jpg" alt="mini2"></a>
+                    </div>
+                    <div class="m4_bottom_bnn">
+                        <a href="#"><img src="./images/mini_banner_3.jpg" alt="mini3"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="f_wrap">
+            <div id="f_left">
+                <p>이 사이트는 포트폴리오 프로젝트의 일환으로서 제작되었습니다.</p>
+                <p>ⓒ tome 2025.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

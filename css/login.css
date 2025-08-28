@@ -1,0 +1,64 @@
+main{
+    height: 830px; padding-top: 90px;
+}
+
+
+.main_wrap{
+    padding-top: 200px;
+}
+
+
+.login_wrap{
+    display: flex; align-items: center; justify-content: center;
+}
+#login{
+    width: 480px; margin: 0 auto; text-align: center;
+    h1{margin-bottom: 50px;}
+    button{width: 100%; height: 35px; border: none; background-color: black; margin-top: 5px;}
+    a{padding: 10px 210px; color: white; font-size: 0.9rem; font-weight: bold; transition: all 0.3s ease;}
+    button:hover a{color: #33ff33;}
+}
+#login label{
+    margin-left: 8px;
+    display: flex; align-items: center; justify-content: center; gap: 5px;
+    input{accent-color: #33ff33;}
+    p{font-size: 0.8rem;}
+}
+#login ul{
+    list-style: none; margin: 5px auto; padding: 0;
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 0.9rem;
+}
+#login ul input{
+    width: 258px; height: 30px;
+    border: 1px solid black; border-radius: 0; padding: 0 10px;
+}
+#login ul input:focus{
+    outline:none;
+}
+
+
+.find_wrap{
+    margin-top: 50px;
+    display: flex; align-items: center; justify-content: center;
+}
+#find{
+    width: 480px; height: 17px;
+    display: flex; align-items: bottom; justify-content: space-between;
+    p{margin: 0; font-size: 0.9rem;}
+    a{font-size: 0.9rem; font-weight: bold; border-bottom: 1px solid black; padding-bottom: 2px;}
+    a:hover{border-bottom: 10px solid #33ff33; font-weight: bold;}
+}
+
+
+.signup_wrap{
+    margin-top: 15px;
+    display: flex; align-items: center; justify-content: center;
+}
+#signup{
+    width: 480px; height: 17px;
+    display: flex; align-items: bottom; justify-content: space-between;
+    p{margin: 0; font-size: 0.9rem;}
+    a{font-size: 0.9rem; font-weight: bold; border-bottom: 1px solid black; padding-bottom: 2px;}
+    a:hover{border-bottom: 10px solid #33ff33; font-weight: bold;}
+}
